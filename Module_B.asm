@@ -251,7 +251,6 @@ permute_PC2 ENDP
 ; Returns:
 ;   EAX = 0 on success
 ; ================================================================
-PUBLIC des_key_schedule
 des_key_schedule PROC, keyHi:DWORD, keyLo:DWORD, pSubkeys:PTR BYTE
     sub esp, 12                ; [ebp-4]  = current C
                                ; [ebp-8]  = current D
